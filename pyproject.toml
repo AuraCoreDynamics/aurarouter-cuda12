@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aurarouter-cuda12"
+version = "0.5.8189"
+authors = [{ name = "Steven Siebert", email = "info@auracoredynamics.com" }]
+description = "CUDA 12.4 backend for AuraRouter"
+readme = "README.md"
+requires-python = ">=3.12"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+aurarouter_cuda12 = ["bin/**/*"]
